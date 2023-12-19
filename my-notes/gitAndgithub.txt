@@ -1,0 +1,20 @@
+---------------------------------------------Git And Github Notes--------------------------------------------
+- Git is a software and github is a service provider.
+- other versioning software murcurial-scm(source-control-management) (it's command same as github)
+-Git download
+
+- ls (listing in mac)
+  li -l (long listing)
+  li -a
+  man ls(manual list)
+	
+  pwd (present working directory)
+- https://git-scm.com/docs - in Which we can see all commands of github
+
+--version control system track files for changes
+
+(1) git
+(2) git --help
+(3) git --version
+(4) git init
+(5) git status
