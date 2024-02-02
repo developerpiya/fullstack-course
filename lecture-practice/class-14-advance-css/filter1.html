@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter in Css</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+            /* filter: blur(1px); */
+            /* filter: brightness(0.4); */
+            /* filter: grayscale(0.8); */
+            /* filter: hue-rotate(90deg); */
+            filter: drop-shadow(30px 10px 2px #3fb1e2) hue-rotate(90deg) drop-shadow(30px 10px 2px #3fb1e2);
+            /* filter: drop-shadow(30px 10px 2px red) hue-rotate(90) drop-shadow(30px 10px 2px blue); */
+        }
+
+        p {
+            color: red;
+            filter: drop-shadow(30px 30px 0 blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+            alt="">
+        <p>Hello World !!</p>
+    </div>
+</body>
+
+</html>

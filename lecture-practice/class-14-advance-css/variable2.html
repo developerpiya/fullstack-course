@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --green: green;
+            --red: red;
+            --blue: blue;
+            --white: #fff;
+            --w: 100px;
+            --h: 50px;
+            --p: 20px;
+        }
+
+        .button {
+            background-color: var(--green);
+            color: var(--white);
+            width: var(--w);
+            height: var(--h);
+            padding: var(--p);
+            text-decoration: none;
+        }
+
+        .red_btn {
+            background-color: var(--red);
+        }
+
+        .button:hover {
+            background-color: var(--blue);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="button">Button Green</a>
+    <a href="#" class="button red_btn">Button Red</a>
+    <a href="#" class="button">Button Hovered on</a>
+</body>
+
+</html>

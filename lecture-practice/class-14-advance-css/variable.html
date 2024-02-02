@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabled in Css</title>
+    <style>
+        :root{
+            --red:#b00;
+            --blue:#4679bd;
+            --grey:#ddd;
+            --w100:100px;
+            --m40:40px    
+        }
+        .container{
+            color: var(--red);
+            background-color: var(--blue);
+            border: 2px solid var(--grey);
+            width: var(--w100);
+            margin: var(--m40);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>custom properties in demo</p>
+    </div>
+</body>
+</html>

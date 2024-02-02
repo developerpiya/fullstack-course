@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peoperty in css</title>
+    <style>
+        p::after{
+            content: attr(blood-group);
+            color: red;
+            font-weight: bold;
+        }
+        .container{
+            width: calc(100% - 200px);
+            height: 80vh;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p blood-group="A+" class="para">My Bloood Group is - </p>
+    </div>
+</body>
+</html>

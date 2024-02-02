@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            /* transform: translateX(60px); */
+            /* transform: translateY(60px); */
+            transform: translate(60px,60px);
+        }
+
+        /* scale property - if scale value between 0-1 then it decrease and if value above 1 then it increase */
+        img {
+            /* transform: scaleX(1.2);  */
+            /* transform: scaleY(1.2);  */
+            transform: scale(1.8,1.8);
+        }
+
+        /* rotate property  */
+        img {
+            transform: rotate(90deg);
+            /* transform: skewX(45deg); */
+            /* transform: skewY(25deg); */
+            transform: skew(45deg,25deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+            alt="">
+    </div>
+</body>
+
+</html>
