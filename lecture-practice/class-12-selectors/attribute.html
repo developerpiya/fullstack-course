@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute in Css</title>
+    <style>
+        a[target]{
+            color: green;
+        }
+
+       /* exact attribute seletor */
+        a[target=value]{
+            color: red;
+        }
+
+        /* value prefix attribute selector */
+        [class^=t]{
+            background-color: pink;
+            color: red;
+        }
+
+        /* value suffix attribute selector */
+        [class$=down]{
+            background-color: yellow;
+            color: blue;
+        }
+
+        /* value space separeted attribute  */
+        [class~="head-1"]{
+            color: brown;
+        }
+
+        /* value hyphon separated attribute */
+        [class|="first-top"]{
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* value substring attribute selector */
+        [class*="sh"]{
+            background-color: bisque;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!-- attribute selector -->
+    <div>
+        <a href="#" target="_blank">google.com</a>
+        <a href="#">youtube.com</a>
+    </div>
+
+    <!-- exact attribute seletor -->
+    <div>
+        <a href="#" target="value">Exact Attribute Selector</a>
+    </div>
+
+    <!-- value prefix attribute selector -->
+    <div>
+        <h1 class="top">Prefix attribute 1</h1>
+        <p class="tenu">Prefix attribute 2</p>
+    </div>
+
+    <!-- value suffix attribute selector -->
+    <div>
+        <p class="first-down">Suffix Attribute 1</p>
+        <p class="second-down">Suffix Attribute 2</p>
+    </div>
+
+    <!-- value space separated attribute selector -->
+    <p class="first head-1">Value Separated heading 1</p>
+    <p class="first head-2">Value Separated heading 2</p>
+    <p class="first head-3">Value Separated heading 3</p>
+    <p class="first head-1">Value Separated heading 4</p>
+
+    <!-- hyphen separated attribute -->
+    <p class="first-top">Hyphon Separeted Value 1</p>
+    <p class="second-down">Hyphon Separeted Value 2</p>
+
+    <!-- valuesubstring attribute selector -->
+    <p class="firstsh">value Substring attribute Selector 1</p>
+    <p class="fish">value Substring attribute Selector 2</p>
+    <p class="fished">value Substring attribute Selector 3</p>
+    <p>value Substring attribute Selector 4</p>
+</body>
+</html>

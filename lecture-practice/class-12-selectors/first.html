@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        ul li {
+            color: red;
+        }
+        header .logo{
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h1+h2{
+            font-size: 16px;
+            color: aqua;
+            font-weight: bold;
+        }
+        p ~ span{
+            color: blueviolet;
+            color: 18px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- descendent combinator space-->
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <!-- descendent combinator first child -->
+    <header>
+        <div class="logo">Descendent combinator first child</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </header>
+
+    <!-- adjacent sibling combinator -->
+    <div class="sibling">
+        <h1>Hello first</h1>
+        <h2>Hello Second</h2>
+    </div>
+
+    <!-- General sibling combinator -->
+    <span>Hello General Sibling</span><br/>
+    <span>Hello General Sibling</span><br/>
+    <span>Hello General Sibling</span><br/>
+</body>
+
+</html>

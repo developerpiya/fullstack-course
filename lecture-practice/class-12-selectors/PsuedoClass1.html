@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo class in CSS</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color: blue;
+        }
+        p:nth-child(3){
+            color: orange;
+        }
+        p:nth-last-of-type(3){
+            color: green;
+        }
+        h1:not(.one){
+            color: blueviolet;
+        }
+        span:first-of-type{
+            color: brown;
+        }
+        span:last-of-type{
+            color: chartreuse;
+        }
+        p:empty{
+            background-color: grey;
+            height: 20px;
+        }
+        input:checked{
+            border: 2px solid green;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>List of visited link</h3>
+    <ul>
+        <li><a href="#">visited link 1</a></li>
+        <li><a href="#">visited link 2</a></li>
+        <li><a href="#">visited link 3</a></li>
+        <li><a href="#">visited link 4</a></li>
+    </ul>
+
+    <h3>List of next visited link</h3>
+    <ul>
+        <li><a href="#">visited link 1</a></li>
+        <li><a href="#">visited link 2</a></li>
+        <li><a href="#">visited link 3</a></li>
+        <li><a href="#">visited link 4</a></li>
+    </ul>
+
+    <div class="container">
+        <p>Child 1</p>
+        <p>Child 2</p>
+        <p>Child 3</p>
+        <p>Child 4</p>
+        <p>Child 5</p>
+        <p>Child 6</p>
+        <p>Child 7</p>
+        <p>Child 8</p>
+        <p>Child 9</p>
+    </div>
+
+    <div>
+        <h1 class="one">Not child 1</h1>
+        <h1>Not child 2</h1>
+        <h1>Not child 3</h1>
+        <h1>Not child 4</h1>
+    </div>
+
+    <span>First of type</span>
+    <span>Last of Type</span>
+
+    <!-- empty -->
+    <p></p>
+
+    <h3>Input checked psuedo class selector</h3>
+    <input type="checkbox" checked/>Agree Terms and conditions
+    <input type="checkbox"/>
+</body>
+</html>
